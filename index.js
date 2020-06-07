@@ -288,28 +288,21 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-//function addArtist(/* Code here */){
+function addArtist(newArtist) {
+  artists.push(newArtist);
+  console.log(artists[artists.length -1]);
+}
+addArtist({
+      "id": 21,
+      "name": "Shenandoah aka. Squishy Veele",
+      "years": "1979 -?",
+      "genre": "crafts",
+      "nationality": "Neanderthal",
+      "bio": "living and breathing code till she gets it",
+  }	);
+  
+ 
 
-	//const newEntry = [
-	  
-                                                                                                                                                                                                                                                                                                                                             
-     // "name": "Shenandoah Veele",
-      //"years": "1994 - no",
-      //"genre": "Craft",
-      //"nationality": "Neanderthal",
-      //"bio": "Just me trying to be
-  //]
-//}  
-//function addArtist(artists,newArray){
-
-	//artists.push(newArray);
-	//console.log(artists);
-	//return artists;
-    /* Code here */
-
-  //}
-
-//addArtist(artists,newEntry);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -319,11 +312,21 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-///function lotsOfArt(/* Code here */){
 
-  /* Code here */
 
-//}
+
+function lotsOfArt(arr){
+  let paintings = [];
+for(let i = 0; i < arr.length; i++) {
+    if(arr[i].paintings > 100) {
+        paintings.push(arr[i].name)
+    }
+}
+  return paintings;
+}
+
+
+console.log(lotsOfArt(artists));
 
 
 
