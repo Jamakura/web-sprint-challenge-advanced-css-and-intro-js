@@ -243,10 +243,18 @@ getArtistByIndex(7, artists[7].name);
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of
  artists who were born the 20th century (1900-2000) */
 
+
+
  function get20s(artists){
-
- }
-
+  let get20th = [];
+  for(let i = 0; i<artists.length; i++){
+    if (artists[i].years.slice(0,4) > 1900 && artists[i].years.slice(0,4) < 2000) {
+      get20th.push(artists[i].name);
+    }
+  }
+  return get20th;
+}
+console.log(get20s(artists));
  
 
 /*rtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
@@ -257,9 +265,7 @@ getArtistByIndex(7, artists[7].name);
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously
  *  remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-//function removeArtist(artists, index) {
- // console.log(removeArtist[artists.length[0]])
-//}
+
 
 
 
