@@ -230,33 +230,26 @@ console.log(artists[2].bio);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 
 */
-/*
-function getArtistByIndex(id,name) {
-  console.log(`The artist at index ${id} is ${name}`);
+function getArtistByIndex(id, name) {
+  
+  console.log(`The artist at index ${id} is ${name}.`);
+  return (`The artist at index ${id} is ${name}.`);
 }
-getArtistByIndex(7,name);
+
+getArtistByIndex(7, artists[7].name);
   /* code here */
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of
  artists who were born the 20th century (1900-2000) */
+
+ function get20s(artists){
+
+ }
+
  
- //function get20s(artists, years){
- // const name = artists[year];
- // const year = born20th;
- //   for (let i = 0; i < artists.years; i++)
-   //   if (artists.years <= 1900 - 2000) {
-     //    return born20th;
-//}
-//console.log(get20s(artists.years))
 
-//}
-
-
-/* Task 5: Create a function called `removeArtist` that takes two arguments:
- *     (1) artists array
- *     (2) a number which is the desired index in the array.
- * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
+/*rtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
  * 
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19. 
