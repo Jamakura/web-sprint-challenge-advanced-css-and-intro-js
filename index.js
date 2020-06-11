@@ -266,9 +266,9 @@ console.log(get20s(artists));
  *  remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(artists,index) {
-  artists.splice(artists, index);
-  console.log(artists);
-  return(artists);
+  artists.splice(index, 1);
+  console.log(artists,index);
+    return artists;
 }
 
 removeArtist(artists,0)
